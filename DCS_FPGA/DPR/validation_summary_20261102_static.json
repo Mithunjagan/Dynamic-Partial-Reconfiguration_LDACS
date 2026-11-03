@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-02",
+  "schema": "ldacs_dpr_source_validation_v2",
+  "unit_tests": {
+    "board_measurement": false,
+    "suites": [
+      {
+        "suite": "HYBRID\\tests\\test_host.py",
+        "tests": 9,
+        "passed": true
+      },
+      {
+        "suite": "HYBRID\\tests\\test_pcap.py",
+        "tests": 8,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PL\\tests\\test_host.py",
+        "tests": 9,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PL\\tests\\test_pcap.py",
+        "tests": 8,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PS\\tests\\test_host.py",
+        "tests": 9,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PS\\tests\\test_pcap.py",
+        "tests": 8,
+        "passed": true
+      },
+      {
+        "suite": "tests\\test_compare_six.py",
+        "tests": 8,
+        "passed": true
+      },
+      {
+        "suite": "tests\\test_preflight.py",
+        "tests": 7,
+        "passed": true
+      },
+      {
+        "suite": "HYBRID\\tests\\test_static_host.py",
+        "tests": 3,
+        "passed": true
+      }
+    ],
+    "tests": 69,
+    "passed": true
+  },
+  "rtl": {
+    "simulator": "Vivado XSim 2022.2",
+    "pipeline_cases": 41,
+    "shell_cases": 1,
+    "byte_enable_cases": 3,
+    "passed": true
+  },
+  "firmware": {
+    "HYBRID": {
+      "sha256": "eeb5b75231bb69f3bbe1de035ae8e22fe1b52dbf62f0eed0396b2a5fb786fa6f",
+      "layout": {
+        "entry": 16779076,
+        "load_regions": [
+          [
+            16777216,
+            16783384,
+            5
+          ],
+          [
+            16783384,
+            16934952,
+            6
+          ]
+        ]
+      }
+    },
+    "FULL_PL": {
+      "sha256": "481a0887d04beffd5608e24f5f7963abb80e58d24fc4754720a17b9cb3b393d3",
+      "layout": {
+        "entry": 16778940,
+        "load_regions": [
+          [
+            16777216,
+            16785616,
+            5
+          ],
+          [
+            16785616,
+            16933136,
+            6
+          ]
+        ]
+      }
+    },
+    "FULL_PS": {
+      "sha256": "382bc69426f0a4daa83e10577934a772c8cb7fb5b4552e8ec6dc51212d623417",
+      "layout": {
+        "entry": 16778588,
+        "load_regions": [
+          [
+            16777216,
+            16789520,
+            5
+          ],
+          [
+            16789520,
+            17140304,
+            6
+          ]
+        ]
+      }
+    }
+  },
+  "default_hybrid": {
+    "topology": "static_hybrid",
+    "eligible_rms": [],
+    "implementation_passed": true,
+    "critical_warnings_passed": true,
+    "metrics": {
+      "lut": 11402,
+      "ff": 6107,
+      "ramb36": 49,
+      "ramb18": 3,
+      "dsp": 1,
+      "wns_ns": 4.223,
+      "tns_ns": 0.0,
+      "whs_ns": 0.025
+    },
+    "image_package": "HYBRID\\hw\\vivado\\build\\dfx\\images.json",
+    "build_token": 1180360726,
+    "full_sha256": "2195060e5b6c56bb62882080d43331d068ef89aa73678efdadab09beed21318e"
+  },
+  "tcl_boot_preflight_passed": true,
+  "physical_board_contacted_this_revision": true,
+  "historical_pcap_evidence": "../../hardware_live/DPR_VALIDATION.md",
+  "new_experimental_dpr_family_built": false,
+  "reset_after_reconfig_saved_full_pl_drc": {
+    "errors": 0,
+    "critical_warnings": 0,
+    "report": "build/review_drc/full_pl_reset_drc.rpt"
+  },
+  "preservation": {
+    "baseline_date": "2026-11-02",
+    "files": 159,
+    "historical_byte_mismatches": 121,
+    "historical_hashes_retained": true
+  },
+  "onboard_evaluation": {
+    "measurement": "physical_board_static_hybrid_evaluation",
+    "passed": true,
+    "recorded_local": "2026-11-02T23:58:52.390692+05:30",
+    "timed_frames": 800,
+    "warmup_frames": 80,
+    "modes": 8,
+    "batches": 40,
+    "stage_buffer_checks": 40,
+    "crc_failures": 0,
+    "rs_failures": 0,
+    "clock_hz": {
+      "global_timer": 333333330,
+      "pl": 49999999
+    },
+    "boot_seconds": 26.876074200030416,
+    "measurement_and_stage_check_seconds": 128.8889758999576,
+    "boot_to_finish_elapsed_seconds": 200.125703,
+    "build_token": 1180360726,
+    "firmware_sha256": "eeb5b75231bb69f3bbe1de035ae8e22fe1b52dbf62f0eed0396b2a5fb786fa6f",
+    "bitstream_sha256": "2195060e5b6c56bb62882080d43331d068ef89aa73678efdadab09beed21318e",
+    "evidence": "HYBRID/results/onboard_20261102T182532Z"
+  }
+}

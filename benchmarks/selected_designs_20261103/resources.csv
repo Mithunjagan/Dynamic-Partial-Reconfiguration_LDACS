@@ -1,0 +1,6 @@
+design,configuration,lut,ff,bram36_equivalent,dsp,wns_ns,whs_ns,source,scope
+PS,static,0.0,0.0,0.0,0.0,,,DCS_FPGA\FULL_PS\hw\vivado\build\utilization.rpt,"Routed implementation metadata, not measured live activity"
+PL,static,11700.0,6234.0,51.5,1.0,0.379,0.008,DCS_FPGA\FULL_PL\hw\vivado\build\utilization.rpt,"Routed implementation metadata, not measured live activity"
+HYBRID,static,11270.0,5990.0,50.5,1.0,0.233,0.05,DCS_FPGA\hw\vivado\build\utilization.rpt,"Routed implementation metadata, not measured live activity"
+STAGE_DPR,viterbi,8723.0,5417.0,50.0,0.0,4.451,0.019,DCS_FPGA\DPR\STAGE_DPR\results\onboard_20261103T051524Z\summary.json,"Routed implementation metadata, not measured live activity"
+STAGE_DPR,rs,6198.0,5046.0,6.5,1.0,3.442,0.019,DCS_FPGA\DPR\STAGE_DPR\results\onboard_20261103T051524Z\summary.json,"Routed implementation metadata, not measured live activity"

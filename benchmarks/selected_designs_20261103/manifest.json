@@ -1,0 +1,540 @@
+{
+  "designs": [
+    "FULL_PS",
+    "FULL_PL_DECODER",
+    "HYBRID",
+    "LATEST_STAGE_SHARING_DPR"
+  ],
+  "hardware_reruns": 0,
+  "static_profiles": 24,
+  "static_timed_frames": 1624,
+  "stage_dpr_frames": 48,
+  "stage_dpr_swaps": 20,
+  "stage_dpr_buffer_checks": 144,
+  "all_selected_evidence_valid": true,
+  "evidence": [
+    {
+      "path": "hardware_live\\captures\\api_verification_final.json",
+      "sha256": "33a8417ca2ac83eb537fdbf158995dd23bcd1b89a06ba3140b4a8efffe466385"
+    },
+    {
+      "path": "benchmarks\\physical_20261103\\static\\measurement.json",
+      "sha256": "1c077ac7dd8c45857849fdc9329b1b68b628ca28b1a4f8a61248d4406d9c8cd5"
+    },
+    {
+      "path": "DCS_FPGA\\DPR\\STAGE_DPR\\results\\onboard_20261103T051524Z\\evaluation.json",
+      "sha256": "0575d97323808d7559e2593e969197b6f189d1613522666bc5c7dbfca907c7ce"
+    },
+    {
+      "path": "DCS_FPGA\\DPR\\STAGE_DPR\\results\\onboard_20261103T051524Z\\summary.json",
+      "sha256": "4df5d50b141c669f2c269e24a5067fd6343f7d4816450a605e5fccf57b8fdca5"
+    },
+    {
+      "path": "DCS_FPGA\\DPR\\STAGE_DPR\\hw\\vivado\\build_dpr\\dfx\\images.json",
+      "sha256": "983e52589e7972acbafabb498ea5ac1701ddf3142cd9c67fc1d01c6638c960da"
+    },
+    {
+      "path": "hardware_live\\build\\PS\\firmware_build.json",
+      "sha256": "2c4de143fda25555edd72a33ac182ead3102afe75542b02702e5ff7d38cb77d9"
+    },
+    {
+      "path": "hardware_live\\build\\PL\\firmware_build.json",
+      "sha256": "4838eca333ba91cff28f232efd05a1b6b35e05bcb72fb23d744e2c2718bd710b"
+    },
+    {
+      "path": "hardware_live\\build\\HYBRID\\firmware_build.json",
+      "sha256": "71d7453922670b272663650db6be8b6ab2b2330fd4b1bc72911a1329bbe6f4c7"
+    }
+  ],
+  "wire_audits": [
+    {
+      "design": "PL",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "PL",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "qpsk_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "16qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_1_2",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_2_3",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    },
+    {
+      "design": "HYBRID",
+      "profile": "64qam_3_4",
+      "check": "binary UART response",
+      "passed": true
+    }
+  ],
+  "excluded": [
+    "whole-receiver DPR",
+    "DPR full PL",
+    "DPR hybrid",
+    "host-only benchmarks",
+    "simulations",
+    "power estimates"
+  ],
+  "sample_count_note": "PS 3 timed frames/profile; PL/Hybrid 100/profile; stage DPR all profiles at batch 1 and QPSK 1/2 also batches 8/32"
+}

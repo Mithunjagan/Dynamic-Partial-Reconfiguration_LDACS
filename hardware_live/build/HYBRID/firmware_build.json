@@ -1,0 +1,64 @@
+{
+  "inputs": {
+    "src/uart_bridge.c": "d5b7c4aa62665204e86a6a697bdaa6c49b17a7ccdeaee123baa7a0007275cb64",
+    "src/runtime.c": "af98ee7a532d467305656ec38a81cd41ab7e4d115fb9902ecaf62bc924393559",
+    "src/helical.c": "5b5584cd18b8ad5a2c16e40288bb14cbd6cb6f0be4ce3bf4be8cfb4b4b685af7",
+    "src/derand.c": "3fd19000380c5e312b6436c4009aca7c3f6f630af65e41d1d20b2ed06e463222",
+    "linker": "46f129436a605632abd65defd46aa8ea745e963ddb5ee9b058e334c65ec00b9e",
+    "compiler": "C:\\Xilinx\\Vitis\\2022.2\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+    "arch": 0,
+    "modem": "9424b438097803843c5304b01e46153e5c0ca7faeb2c7d63e0a68dadc5fdf675",
+    "build_policy": "aligned-access-modem-pool-registers-v5"
+  },
+  "elf_sha256": "840905b70e172420f448e84567be4a3e33c9a978f4c24470d2be264b3d5dc0f9",
+  "memory": {
+    "entry": "0x0100070C",
+    "load_regions": [
+      [
+        "0x1000000",
+        "0x1001eb8",
+        5
+      ],
+      [
+        "0x1001eb8",
+        "0x103c628",
+        6
+      ]
+    ]
+  },
+  "built_utc": "2026-10-30T06:05:43.762321+00:00",
+  "flags": [
+    "-std=c11",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-marm",
+    "-O2",
+    "-mno-unaligned-access",
+    "-Wall",
+    "-Wextra",
+    "-Wno-unused-function",
+    "-Wno-unused-variable",
+    "-Wno-unused-parameter",
+    "-Iinclude",
+    "-I../../../../hardware_live",
+    "-nostdlib",
+    "-nostartfiles",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-stack-protector",
+    "-DARCH=0",
+    "-Wl,--build-id=none",
+    "-T",
+    "../../../../hardware_live/firmware.ld",
+    "-o",
+    "../../../../hardware_live/build/HYBRID/uart_bridge.elf",
+    "../../../../hardware_live/build/HYBRID/uart_bridge_modem.c",
+    "src/runtime.c",
+    "src/helical.c",
+    "src/derand.c",
+    "-lgcc",
+    "-e",
+    "_start"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "ldacs_hybrid_partition_policy_v2",
+  "default_topology": "receiver_dpr",
+  "goal": "Runtime replacement following DPR_Implementation_Handbook.md",
+  "static": [
+    "PS/DDR/UART",
+    "AXI DMA and interconnects",
+    "FCLK/reset infrastructure",
+    "AXI-Lite proxy and isolation",
+    "build identity/generation",
+    "64-bit static heartbeat"
+  ],
+  "reconfigurable_partition": "system_i/dec/inst/dynamic_slot/rp",
+  "modules": {
+    "hybrid": {
+      "id": 0,
+      "function": "Viterbi, bit packing, block deinterleaving, RS"
+    },
+    "full_pl": {
+      "id": 1,
+      "function": "Complete receiver chain"
+    },
+    "blank": {
+      "id": 2,
+      "function": "Existing idle image"
+    },
+    "anchor": {
+      "id": 3,
+      "function": "Existing diagnostic image"
+    }
+  },
+  "selection_reason": "Preserve the existing pin-compatible receiver RMs and their proven interfaces; use one coarse receiver RP for runtime swaps. No per-frame area/performance advantage is claimed.",
+  "static_baseline": "partition_policy_static_baseline.json",
+  "implementation_status": "See ../IMPLEMENTATION_STATUS.md"
+}

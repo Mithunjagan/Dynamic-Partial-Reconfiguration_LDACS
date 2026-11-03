@@ -1,0 +1,37 @@
+# Programs this variant only; board preset initializes DDR, MIO and clocks.
+set root [file normalize [file dirname [info script]]]
+set family [file normalize $root/hw/vivado/build_dpr/dfx]
+if {$argc>0} {set family [file normalize [lindex $argv 0]]}
+set routed [file join $family routed_manifest.json]
+set images [file join $family images.json]
+foreach required [list $routed $images] {if {![file exists $required]} {error "Build and package verified DFX images first: $required"}}
+set build_root [file dirname $family]
+# The validated manifest chooses the boot image.
+set psinit [file join $build_root ldacs_zed/ldacs_zed.gen/sources_1/bd/system/ip/system_ps7_0/ps7_init.tcl]
+if {![file exists $psinit]} {
+    set psinit [file join $build_root ldacs_zed/ldacs_zed.srcs/sources_1/bd/system/ip/system_ps7_0/ps7_init.tcl]
+}
+set elf [file join $root sw/dpr/uart_bridge.elf]
+if {$argc>1} {set elf [file normalize [lindex $argv 1]]}
+# Python handles JSON and SHA-256; Tcl 8.5 has neither json nor zlib built in.
+set bit [string trim [exec python -E [file normalize $root/../validate_boot.py] --family $family --module hybrid --elf $elf]]
+foreach required [list $bit $psinit $elf] {if {![file exists $required]} {error "Missing build artifact: $required"}}
+connect
+jtag targets -set -filter {level == 0 && jtag_cable_product == "Edge"}
+puts "JTAG_HZ=[jtag frequency 1000000]"
+targets -set -filter {name =~ "*Cortex-A9*#1*"}
+catch {stop}
+if {[llength [targets -filter {name =~ "*xc7z010*"}]] == 0} {error "EDGE Z7-10 xc7z010 not found"}
+targets -set -filter {name =~ "*Cortex-A9*#0*"}
+rst -processor
+source $psinit
+ps7_init
+targets -set -filter {name =~ "*xc7z010*"}
+fpga -file $bit
+targets -set -filter {name =~ "*Cortex-A9*#0*"}
+ps7_post_config
+configparams force-mem-access 1
+dow $elf
+con
+puts "BOOT_OK: research firmware running"
+exit

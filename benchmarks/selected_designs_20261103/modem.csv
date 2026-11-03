@@ -1,0 +1,25 @@
+design,profile,symbols,bit_errors,mapping_us,demapping_us,uart_wall_ms,trials,source,scope
+PS,qpsk_1_2,4884,0,8183.880081838801,5773.47905773479,2594.5745001081377,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,qpsk_2_3,4884,0,8183.958081839581,5772.4050577240505,2578.476799884811,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,qpsk_3_4,4884,0,8184.270081842701,5773.185057731851,2582.4492999818176,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,16qam_1_2,4884,0,9154.07109154071,8039.9190803991905,4295.705999946222,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,16qam_2_3,4884,0,9140.295091402952,8038.24508038245,4287.935699801892,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,64qam_1_2,4884,0,11896.806118968061,10214.055102140552,6007.741899928078,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,64qam_2_3,4884,0,11873.589118735892,10214.820102148202,5998.662499943748,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PS,64qam_3_4,4884,0,11882.619118826191,10214.09110214091,5987.368500092998,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,qpsk_1_2,4884,0,9349.218093492182,5422.41905422419,2585.213600192219,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,qpsk_2_3,4884,0,9349.758093497581,5422.647054226471,2582.9709998797625,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,qpsk_3_4,4884,0,9350.775093507751,5421.9870542198705,2576.2837999500334,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,16qam_1_2,4884,0,10200.813102008131,7476.753074767531,4288.712800014764,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,16qam_2_3,4884,0,10182.258101822581,7478.628074786281,4292.038999963552,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,64qam_1_2,4884,0,13639.416136394162,9641.60409641604,5981.649300083518,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,64qam_2_3,4884,0,13617.777136177772,9641.748096417481,5977.296799886972,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+PL,64qam_3_4,4884,0,13635.042136350421,9644.748096447482,5978.38220000267,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,qpsk_1_2,4884,0,8613.06608613066,5773.092057730921,2569.0995999611914,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,qpsk_2_3,4884,0,8612.559086125591,5772.306057723061,2575.6306000985205,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,qpsk_3_4,4884,0,8613.5700861357,5772.3000577230005,2571.7858001589775,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,16qam_1_2,4884,0,9347.922093479221,8351.14208351142,4281.584600219503,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,16qam_2_3,4884,0,9334.81509334815,8340.65108340651,4284.0833000373095,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,64qam_1_2,4884,0,12322.524123225241,10909.65610909656,5985.5179998558015,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,64qam_2_3,4884,0,12294.57312294573,10902.8401090284,5985.954999923706,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise
+HYBRID,64qam_3_4,4884,0,12307.149123071491,10903.851109038511,5988.40060015209,1,hardware_live\captures\api_verification_final.json,Physical ARM ideal digital QAM loopback; no RF/noise

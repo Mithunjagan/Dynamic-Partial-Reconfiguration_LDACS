@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "time": "2026-11-03T06:01:57.738638+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "JTAG boot PL / target XC7Z010 / firmware 56d056c89c33889f"
+  },
+  {
+    "id": 2,
+    "time": "2026-11-03T06:02:05.440488+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "JTAG frequency: 1000000"
+  },
+  {
+    "id": 3,
+    "time": "2026-11-03T06:02:07.769025+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:1:PS system reset via JTAG; CPU1 halted (not a physical POR_B cold boot)"
+  },
+  {
+    "id": 4,
+    "time": "2026-11-03T06:02:08.353406+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:2:Board-generated PS initialization completed: DDR/MIO/PLL"
+  },
+  {
+    "id": 5,
+    "time": "2026-11-03T06:02:25.529932+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:3:Architecture-specific routed FPGA bitstream programmed via JTAG"
+  },
+  {
+    "id": 6,
+    "time": "2026-11-03T06:02:25.580983+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:4:PS post-configuration complete; loading DDR firmware at 0x01000000"
+  },
+  {
+    "id": 7,
+    "time": "2026-11-03T06:02:25.779264+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:5:Firmware started; awaiting real UART decode and architecture-ID verification"
+  },
+  {
+    "id": 8,
+    "time": "2026-11-03T06:02:25.779264+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_LOAD_OK"
+  },
+  {
+    "id": 9,
+    "time": "2026-11-03T06:02:26.839302+00:00",
+    "source": "UART",
+    "level": "success",
+    "text": "BOOT VERIFIED: board architecture=FULL_PL; payload and CRC32 match"
+  },
+  {
+    "id": 10,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000004 = 0x00000000"
+  },
+  {
+    "id": 11,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000024 = 0x46504C31"
+  },
+  {
+    "id": 12,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x4000002C = 0x00009859"
+  },
+  {
+    "id": 13,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000030 = 0x00002C54"
+  },
+  {
+    "id": 14,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000034 = 0x000006DE"
+  },
+  {
+    "id": 15,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000038 = 0x0000C562"
+  },
+  {
+    "id": 16,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x4000001C = 0x00000000"
+  },
+  {
+    "id": 17,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40000020 = 0x00000000"
+  },
+  {
+    "id": 18,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40400004 = 0x00001002"
+  },
+  {
+    "id": 19,
+    "time": "2026-11-03T06:02:26.879864+00:00",
+    "source": "MMIO",
+    "level": "info",
+    "text": "0x40400034 = 0x00001002"
+  },
+  {
+    "id": 20,
+    "time": "2026-11-03T06:02:36.468918+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 21,
+    "time": "2026-11-03T06:02:40.023472+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 22,
+    "time": "2026-11-03T06:02:43.557081+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 23,
+    "time": "2026-11-03T06:02:54.370911+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 24,
+    "time": "2026-11-03T06:02:57.917208+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 25,
+    "time": "2026-11-03T06:03:01.488082+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 26,
+    "time": "2026-11-03T06:03:12.482467+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 27,
+    "time": "2026-11-03T06:03:16.033644+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 28,
+    "time": "2026-11-03T06:03:19.595200+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "QPSK: 4884 real ARM-mapped I/Q symbols; 9768 demapped bits; bit errors=0"
+  },
+  {
+    "id": 29,
+    "time": "2026-11-03T06:03:38.690887+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 30,
+    "time": "2026-11-03T06:03:44.851119+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 31,
+    "time": "2026-11-03T06:03:51.028065+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 32,
+    "time": "2026-11-03T06:04:11.584591+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 33,
+    "time": "2026-11-03T06:04:17.799409+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 34,
+    "time": "2026-11-03T06:04:24.033450+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "16QAM: 4884 real ARM-mapped I/Q symbols; 19536 demapped bits; bit errors=0"
+  },
+  {
+    "id": 35,
+    "time": "2026-11-03T06:04:52.610097+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 36,
+    "time": "2026-11-03T06:05:01.421074+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 37,
+    "time": "2026-11-03T06:05:10.222053+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 38,
+    "time": "2026-11-03T06:05:40.487193+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 39,
+    "time": "2026-11-03T06:05:49.359140+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 40,
+    "time": "2026-11-03T06:05:58.226039+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 41,
+    "time": "2026-11-03T06:06:29.037429+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 42,
+    "time": "2026-11-03T06:06:37.960383+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 43,
+    "time": "2026-11-03T06:06:46.873146+00:00",
+    "source": "MODEM",
+    "level": "success",
+    "text": "64QAM: 4884 real ARM-mapped I/Q symbols; 29304 demapped bits; bit errors=0"
+  },
+  {
+    "id": 44,
+    "time": "2026-11-03T06:06:50.091475+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "JTAG boot HYBRID / target XC7Z010 / firmware 840905b70e172420"
+  },
+  {
+    "id": 45,
+    "time": "2026-11-03T06:06:51.850668+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "JTAG frequency: 1000000"
+  },
+  {
+    "id": 46,
+    "time": "2026-11-03T06:06:54.087999+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:1:PS system reset via JTAG; CPU1 halted (not a physical POR_B cold boot)"
+  },
+  {
+    "id": 47,
+    "time": "2026-11-03T06:06:54.711817+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:2:Board-generated PS initialization completed: DDR/MIO/PLL"
+  },
+  {
+    "id": 48,
+    "time": "2026-11-03T06:07:11.638395+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:3:Architecture-specific routed FPGA bitstream programmed via JTAG"
+  },
+  {
+    "id": 49,
+    "time": "2026-11-03T06:07:11.677589+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:4:PS post-configuration complete; loading DDR firmware at 0x01000000"
+  },
+  {
+    "id": 50,
+    "time": "2026-11-03T06:07:11.922716+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_STAGE:5:Firmware started; awaiting real UART decode and architecture-ID verification"
+  },
+  {
+    "id": 51,
+    "time": "2026-11-03T06:07:11.922716+00:00",
+    "source": "JTAG",
+    "level": "info",
+    "text": "AXIOM_LOAD_OK"
+  },
+  {
+    "id": 52,
+    "time": "2026-11-03T06:07:12.941351+00:00",
+    "source": "UART",
+    "level": "success",
+    "text": "BOOT VERIFIED: board architecture=HYBRID; payload and CRC32 match"
+  }
+]

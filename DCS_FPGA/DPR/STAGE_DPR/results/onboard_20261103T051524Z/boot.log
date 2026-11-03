@@ -1,0 +1,2 @@
+JTAG_HZ=1000000
+BOOT_OK: research firmware running

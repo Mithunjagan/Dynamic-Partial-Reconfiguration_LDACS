@@ -1,0 +1,522 @@
+{
+  "schema": "ldacs_dpr_validation_v3",
+  "date": "2026-11-03",
+  "passed": true,
+  "previous_static_validation": "validation_summary_20261102_static.json",
+  "unit_tests": {
+    "kind": "source_tests_not_board_measurements",
+    "tests": 92,
+    "passed": true,
+    "suites": [
+      {
+        "suite": "HYBRID/tests/test_host.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "HYBRID/tests/test_pcap.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PL/tests/test_host.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PL/tests/test_pcap.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PS/tests/test_host.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "FULL_PS/tests/test_pcap.py",
+        "tests": 12,
+        "passed": true
+      },
+      {
+        "suite": "tests/test_compare_six.py",
+        "tests": 8,
+        "passed": true
+      },
+      {
+        "suite": "tests/test_preflight.py",
+        "tests": 7,
+        "passed": true
+      },
+      {
+        "suite": "tests/test_source_pin.py",
+        "tests": 2,
+        "passed": true
+      },
+      {
+        "suite": "HYBRID/tests/test_static_host.py",
+        "tests": 3,
+        "passed": true
+      }
+    ]
+  },
+  "rtl_tests": {
+    "board_measurement": false,
+    "pipeline_cases": 14,
+    "control_cases": 4,
+    "passed": true,
+    "evidence": "build/review_rtl/validation.json"
+  },
+  "preservation": {
+    "files": 159,
+    "passed": true,
+    "baseline_date": "2026-11-02",
+    "history": "baseline_history.json"
+  },
+  "image_family": {
+    "schema": "ldacs_dpr_image_family_v1",
+    "build_token": 5330926,
+    "part": "xc7z010clg400-1",
+    "rp_cell": "system_i/dec/inst/dynamic_slot.rp",
+    "pr_verify_passed": true,
+    "static_checkpoint_sha256": "a7cd45bb84739cc507e95d95798f20e6c59983f692d57847dc59ee35ade460ec",
+    "static_monitor_version": 1,
+    "hardware_source_sha256": "e81da90a31e8228b6e1b29fd67777a15953badeaa0a1acea3a7a13dced51f287",
+    "modules": {
+      "hybrid": {
+        "id": 0,
+        "partial_file": "hybrid.pcap.bin",
+        "partial_bytes": 1683900,
+        "partial_sha256": "9f7dd15ba1d84eb0ab7c11a8bb87224665c7539cfd8a26f0ec1c2bbe88955867",
+        "full_file": "hybrid.bit",
+        "full_sha256": "056bb098fc7d16a3bb5a322acb2c3513c4b017d46f5f84398f0ef644ae63109f",
+        "routed_checkpoint_sha256": "ae39d915ffcca77b1d6854a1779e0d216f797c9a3007ff5306603fb257f40070"
+      },
+      "full_pl": {
+        "id": 1,
+        "partial_file": "full_pl.pcap.bin",
+        "partial_bytes": 1683900,
+        "partial_sha256": "4bc66618044bad7f75785b5351b4e4ef524f00487e3154c824a328058e65fca2",
+        "full_file": "full_pl.bit",
+        "full_sha256": "bceed5178f61ae415ccd04a0d1db1e51a62c01b852805a2df502fbbbb0b2827e",
+        "routed_checkpoint_sha256": "89e52209da41f089ae6da0bff1262ef95d4086c3011070cc375304b20d033f4e"
+      },
+      "blank": {
+        "id": 2,
+        "partial_file": "blank.pcap.bin",
+        "partial_bytes": 1683900,
+        "partial_sha256": "75b9d470c8b39036c9d456c22204d6700b7e23831e3c6b8d12d8d983636add38",
+        "full_file": "blank.bit",
+        "full_sha256": "0d34401401d88dc4e733071ae5c0ed0e89258b733140f1a2ba08aaf7b2cbca81",
+        "routed_checkpoint_sha256": "be4e8d8ee99405074ac829efd0e3fe0a55ddfb95ffaf2980444c62171d14de3d"
+      },
+      "anchor": {
+        "id": 3,
+        "partial_file": "anchor.pcap.bin",
+        "partial_bytes": 1683900,
+        "partial_sha256": "eea1083d875bd3e7eb8692a8ec36ea4351a784beb5e654c5167c5a6eb56cf574",
+        "full_file": "anchor.bit",
+        "full_sha256": "0638cdadeaaccca0b1794942a2e634e08716210a174c981134c7c372c3270e78",
+        "routed_checkpoint_sha256": "3a69fd215a1a5da2f4310c96a4248d7407b12a14988f71515f685d6cd91e2fc2"
+      }
+    }
+  },
+  "firmware": {
+    "architecture": 0,
+    "elf_layout": {
+      "entry": 16779332,
+      "load_regions": [
+        [
+          16777216,
+          16786840,
+          5
+        ],
+        [
+          16786840,
+          16938504,
+          6
+        ]
+      ]
+    },
+    "platform": "receiver_dpr",
+    "required_static_monitor_version": 1,
+    "compiler": "arm-xilinx-eabi-gcc.exe (GCC) 11.2.0",
+    "flags": [
+      "-std=c11",
+      "-mcpu=cortex-a9",
+      "-mfpu=vfpv3",
+      "-mfloat-abi=hard",
+      "-marm",
+      "-mno-unaligned-access",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Wno-unused-function",
+      "-Wno-unused-variable",
+      "-Wno-unused-parameter",
+      "-Iinclude",
+      "-nostdlib",
+      "-nostartfiles",
+      "-ffreestanding",
+      "-fno-builtin",
+      "-fno-stack-protector",
+      "-DARCH=0",
+      "-DDPR_STATIC_MONITOR=1",
+      "-Wl,--build-id=none",
+      "-T",
+      "ldacs_bridge.ld",
+      "-Wl,-Map,dpr/uart_bridge.map",
+      "-o",
+      "dpr/uart_bridge.elf",
+      "src/uart_bridge.c",
+      "src/runtime.c",
+      "src/helical.c",
+      "src/derand.c",
+      "-lgcc",
+      "-e",
+      "_start"
+    ],
+    "cache_policy": "I-cache and D-cache disabled for all variants",
+    "elf_sha256": "b0603171e747d3541cf645fbc558fd0fe1ad61bd99d7232c6a7d7488db1c890e",
+    "sources": {
+      "sw\\include\\ldacs.h": "df36dbca520cad573fa55674334938b36ee77642f911340c3a110bb1cb37d216",
+      "sw\\ldacs_bridge.ld": "46f129436a605632abd65defd46aa8ea745e963ddb5ee9b058e334c65ec00b9e",
+      "sw\\src\\derand.c": "3fd19000380c5e312b6436c4009aca7c3f6f630af65e41d1d20b2ed06e463222",
+      "sw\\src\\dpr_runtime.inc": "0ebb781bdb4dcb9da7b7dbc3b3c33706e40dfc0bd5721f945159855307768539",
+      "sw\\src\\helical.c": "5b5584cd18b8ad5a2c16e40288bb14cbd6cb6f0be4ce3bf4be8cfb4b4b685af7",
+      "sw\\src\\runtime.c": "af98ee7a532d467305656ec38a81cd41ab7e4d115fb9902ecaf62bc924393559",
+      "sw\\src\\uart_bridge.c": "25f35435e6ef2ff883318b6690284382126c0081d1cd54a7783df8417ae8467e"
+    }
+  },
+  "routed_configurations": {
+    "hybrid": {
+      "lut": 11480.0,
+      "ff": 6201.0,
+      "bram36_equivalent": 50.5,
+      "dsp": 1.0,
+      "wns_ns": 2.869,
+      "tns_ns": 0.0,
+      "whs_ns": 0.024
+    },
+    "full_pl": {
+      "lut": 12012.0,
+      "ff": 6417.0,
+      "bram36_equivalent": 51.5,
+      "dsp": 2.0,
+      "wns_ns": 1.517,
+      "tns_ns": 0.0,
+      "whs_ns": 0.024
+    },
+    "blank": {
+      "lut": 3161.0,
+      "ff": 4009.0,
+      "bram36_equivalent": 5.0,
+      "dsp": 0.0,
+      "wns_ns": 6.042,
+      "tns_ns": 0.0,
+      "whs_ns": 0.024
+    },
+    "anchor": {
+      "lut": 3144.0,
+      "ff": 4072.0,
+      "bram36_equivalent": 5.0,
+      "dsp": 0.0,
+      "wns_ns": 6.042,
+      "tns_ns": 0.0,
+      "whs_ns": 0.024
+    }
+  },
+  "onboard_dpr": {
+    "measurement": "physical_board_hybrid_dpr_evaluation",
+    "passed": true,
+    "build_token": 5330926,
+    "completed_utc": "2026-11-02T19:58:12.885852+00:00",
+    "timed_frames": 800,
+    "warmup_frames": 80,
+    "partial_transfers": 6,
+    "static_continuity_passed": true,
+    "stage_checks": 40,
+    "modes": [
+      {
+        "mode": "qpsk_1_2",
+        "frames": 100,
+        "mean_ms": 8.75704094757041,
+        "min_ms": 8.753745087537451,
+        "max_ms": 8.760750087607502,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "qpsk_2_3",
+        "frames": 100,
+        "mean_ms": 9.104274541042745,
+        "min_ms": 9.101718091017181,
+        "max_ms": 9.10832709108327,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "qpsk_3_4",
+        "frames": 100,
+        "mean_ms": 9.277795472777955,
+        "min_ms": 9.274515092745151,
+        "max_ms": 9.28242309282423,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "16qam_1_2",
+        "frames": 100,
+        "mean_ms": 16.673757286737573,
+        "min_ms": 16.666302166663023,
+        "max_ms": 16.68190216681902,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "16qam_2_3",
+        "frames": 100,
+        "mean_ms": 17.36594900365949,
+        "min_ms": 17.35372217353722,
+        "max_ms": 17.37692717376927,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "64qam_1_2",
+        "frames": 100,
+        "mean_ms": 25.068988900689888,
+        "min_ms": 25.053081250530813,
+        "max_ms": 25.087995250879953,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "64qam_2_3",
+        "frames": 100,
+        "mean_ms": 26.104828131048286,
+        "min_ms": 26.092950260929502,
+        "max_ms": 26.11680326116803,
+        "crc_failures": 0,
+        "rs_failures": 0
+      },
+      {
+        "mode": "64qam_3_4",
+        "frames": 100,
+        "mean_ms": 26.628314426283147,
+        "min_ms": 26.611836266118363,
+        "max_ms": 26.640309266403094,
+        "crc_failures": 0,
+        "rs_failures": 0
+      }
+    ],
+    "boot_seconds": 19.660619899979793,
+    "wall_seconds": 470.34245930000907,
+    "image_uploads": [
+      {
+        "module": "blank",
+        "partial_sha256": "75b9d470c8b39036c9d456c22204d6700b7e23831e3c6b8d12d8d983636add38",
+        "bytes": 1683900,
+        "host_upload_seconds": 149.1427604999626,
+        "included_in_switch_latency": false
+      },
+      {
+        "module": "hybrid",
+        "partial_sha256": "9f7dd15ba1d84eb0ab7c11a8bb87224665c7539cfd8a26f0ec1c2bbe88955867",
+        "bytes": 1683900,
+        "host_upload_seconds": 149.14141630002996,
+        "included_in_switch_latency": false
+      }
+    ]
+  },
+  "evidence": "HYBRID/results/dpr_20261102T195022Z",
+  "physical_scope": [
+    "hybrid",
+    "blank"
+  ],
+  "tool_verified_modules": [
+    "hybrid",
+    "full_pl",
+    "blank",
+    "anchor"
+  ],
+  "limitations": [
+    "FULL_PL and anchor not physically swapped in this evaluation",
+    "No physical interrupted-transfer recovery test",
+    "No RF/OFDM or independent LDACS conformance verification",
+    "No measured power or DPR throughput/area advantage claimed"
+  ],
+  "stage_multiplexed_dpr": {
+    "variant": "STAGE_DPR",
+    "passed": true,
+    "evidence": "STAGE_DPR/results/onboard_20261103T051524Z",
+    "native_tests": 21,
+    "rtl_cases": 4,
+    "onboard_summary": {
+      "passed": true,
+      "completed_utc": "2026-11-03T05:21:56.397029+00:00",
+      "timed_frames": 48,
+      "partial_transfers": 20,
+      "resources": {
+        "viterbi": {
+          "lut": 8723.0,
+          "ff": 5417.0,
+          "bram36_equivalent": 50.0,
+          "dsp": 0.0,
+          "wns_ns": 4.451,
+          "tns_ns": 0.0,
+          "whs_ns": 0.019
+        },
+        "rs": {
+          "lut": 6198.0,
+          "ff": 5046.0,
+          "bram36_equivalent": 6.5,
+          "dsp": 1.0,
+          "wns_ns": 3.442,
+          "tns_ns": 0.0,
+          "whs_ns": 0.019
+        }
+      },
+      "baseline_lut": 11480.0,
+      "peak_lut": 8723.0,
+      "saved_lut": 2757.0,
+      "saved_lut_percent": 24.015679442508713,
+      "frame_buffer_checks": 144,
+      "rows": [
+        {
+          "mode": "qpsk_1_2",
+          "batch": 1,
+          "compute_integrity_ms": 24.18978924189789,
+          "pcap_ms": 36.48709836487098,
+          "crc_precheck_ms": 1420.625339206253,
+          "service_per_frame_ms": 1481.7252778172528,
+          "derived_service_mbps": 0.0029479148836784055,
+          "execution_wall_s": 1.713373499980662,
+          "wall_payload_mbps": 0.002549356576396973,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "qpsk_2_3",
+          "batch": 1,
+          "compute_integrity_ms": 11.547219115472192,
+          "pcap_ms": 36.490902364909026,
+          "crc_precheck_ms": 1420.6167442061674,
+          "service_per_frame_ms": 1469.0774726907748,
+          "derived_service_mbps": 0.003964392694234643,
+          "execution_wall_s": 1.7134504999849014,
+          "wall_payload_mbps": 0.0033989893492991597,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "qpsk_3_4",
+          "batch": 1,
+          "compute_integrity_ms": 11.848986118489861,
+          "pcap_ms": 36.48786936487869,
+          "crc_precheck_ms": 1420.6154662061547,
+          "service_per_frame_ms": 1469.3752616937527,
+          "derived_service_mbps": 0.004459037912784439,
+          "execution_wall_s": 1.698252699978184,
+          "wall_payload_mbps": 0.0038580830756719353,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "16qam_1_2",
+          "batch": 1,
+          "compute_integrity_ms": 20.55344420553444,
+          "pcap_ms": 36.49100136491001,
+          "crc_precheck_ms": 1420.6158292061584,
+          "service_per_frame_ms": 1478.083100780831,
+          "derived_service_mbps": 0.005910357810995207,
+          "execution_wall_s": 1.693134300003294,
+          "wall_payload_mbps": 0.0051596615814723055,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "16qam_2_3",
+          "batch": 1,
+          "compute_integrity_ms": 21.76230921762309,
+          "pcap_ms": 36.49435836494358,
+          "crc_precheck_ms": 1420.619504206195,
+          "service_per_frame_ms": 1479.2992407929926,
+          "derived_service_mbps": 0.007873998497934723,
+          "execution_wall_s": 1.7214209000230767,
+          "wall_payload_mbps": 0.006766503183413104,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "64qam_1_2",
+          "batch": 1,
+          "compute_integrity_ms": 30.116889301168893,
+          "pcap_ms": 36.49259736492597,
+          "crc_precheck_ms": 1420.613102206131,
+          "service_per_frame_ms": 1487.645696876457,
+          "derived_service_mbps": 0.008808548989530157,
+          "execution_wall_s": 1.7210673000081442,
+          "wall_payload_mbps": 0.0076138800614816106,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "64qam_2_3",
+          "batch": 1,
+          "compute_integrity_ms": 31.898565318985654,
+          "pcap_ms": 36.49664736496647,
+          "crc_precheck_ms": 1420.623692206237,
+          "service_per_frame_ms": 1489.4418238944181,
+          "derived_service_mbps": 0.01173056894180416,
+          "execution_wall_s": 1.7350355999660678,
+          "wall_payload_mbps": 0.010070110377182865,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "64qam_3_4",
+          "batch": 1,
+          "compute_integrity_ms": 32.74902032749021,
+          "pcap_ms": 36.49695936496959,
+          "crc_precheck_ms": 1420.621301206213,
+          "service_per_frame_ms": 1490.2903109029032,
+          "derived_service_mbps": 0.013189376496778852,
+          "execution_wall_s": 1.7470992000307888,
+          "wall_payload_mbps": 0.011250649075709959,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "qpsk_1_2",
+          "batch": 8,
+          "compute_integrity_ms": 87.51977787519778,
+          "pcap_ms": 36.49378236493783,
+          "crc_precheck_ms": 1420.617296206173,
+          "service_per_frame_ms": 193.13172793131727,
+          "derived_service_mbps": 0.022616687826421643,
+          "execution_wall_s": 1.7699026000336744,
+          "wall_payload_mbps": 0.019743459328968246,
+          "crc_failures": 0,
+          "rs_failures": 0
+        },
+        {
+          "mode": "qpsk_1_2",
+          "batch": 32,
+          "compute_integrity_ms": 350.0773475007735,
+          "pcap_ms": 36.49902336499024,
+          "crc_precheck_ms": 1420.628600206286,
+          "service_per_frame_ms": 56.48837100238372,
+          "derived_service_mbps": 0.07732564990793729,
+          "execution_wall_s": 1.9397688999888487,
+          "wall_payload_mbps": 0.07205806836103183,
+          "crc_failures": 0,
+          "rs_failures": 0
+        }
+      ],
+      "static_continuity": true,
+      "source_evaluation": "evaluation.json",
+      "baseline": "C:\\Users\\Shrihari S\\Desktop\\DCS\\Aero_proj\\DCS_FPGA\\DPR\\HYBRID\\results\\dpr_20261102T195022Z\\summary.json"
+    }
+  }
+}

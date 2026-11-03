@@ -1,0 +1,30 @@
+{
+  "schema": "ldacs_stage_dpr_image_family_v1",
+  "build_token": 411869786,
+  "part": "xc7z010clg400-1",
+  "rp_cell": "system_i/dec/inst/dynamic_slot.rp",
+  "pr_verify_passed": true,
+  "static_checkpoint_sha256": "5410b9e2556de1efc5756cd7dc9de96d05c4a8a76435dd44813c2264e95ba8e0",
+  "static_monitor_version": 1,
+  "hardware_source_sha256": "a0267723139488e6dfc78feffbfdb3a22227915cc0fcbc7d9861aa7efb034ba1",
+  "modules": {
+    "viterbi": {
+      "id": 0,
+      "partial_file": "viterbi.pcap.bin",
+      "partial_bytes": 1683900,
+      "partial_sha256": "1b5e7572ed1d1b76ec316564ef4a9afca82e5f968a8c396509c4d7eea4e960f1",
+      "full_file": "viterbi.bit",
+      "full_sha256": "11cb50e36658cfadca77cc3888d220379043da17903e24a3f69eb5e06f7a0d9a",
+      "routed_checkpoint_sha256": "0349695922ac27483ea685802dce29cf6341f46497ea41637e6b15308003dacc"
+    },
+    "rs": {
+      "id": 1,
+      "partial_file": "rs.pcap.bin",
+      "partial_bytes": 1683900,
+      "partial_sha256": "fe560967e749048466af528c2a8e886e6e2f8df59f708f5417b19d33fd086000",
+      "full_file": "rs.bit",
+      "full_sha256": "44acc93b1d4dbbe9ca14aa1249a6f0d843c8f8811ae83d656da01a14e14875bb",
+      "routed_checkpoint_sha256": "eb0404d77790b7757f89ef16097c309691b68c907027c75cbe677ec511dc1743"
+    }
+  }
+}

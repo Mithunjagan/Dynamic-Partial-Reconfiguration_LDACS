@@ -1,0 +1,131 @@
+{
+  "schema": "ldacs_hybrid_partition_policy_v1",
+  "default_topology": "static_hybrid",
+  "eligible_rms": [],
+  "blocks": {
+    "axi_memory_interconnect": {
+      "placement": "Static",
+      "lut": 979,
+      "ff": 1124,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0
+    },
+    "control_shell": {
+      "placement": "Static",
+      "lut": 121,
+      "ff": 134,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0
+    },
+    "decoder_control": {
+      "placement": "Static",
+      "lut": 360,
+      "ff": 382,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 1
+    },
+    "bit_packing": {
+      "placement": "Static",
+      "lut": 13,
+      "ff": 11,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0
+    },
+    "block_deinterleaver": {
+      "placement": "Static",
+      "lut": 117,
+      "ff": 71,
+      "ramb36": 1,
+      "ramb18": 0,
+      "dsp": 0,
+      "observed_min_us": 158.87200317744006,
+      "observed_max_us": 720.1180144023602
+    },
+    "reed_solomon": {
+      "placement": "Static",
+      "lut": 2773,
+      "ff": 653,
+      "ramb36": 0,
+      "ramb18": 1,
+      "dsp": 0,
+      "observed_min_us": 24.61200049224001,
+      "observed_max_us": 110.75400221508005
+    },
+    "viterbi": {
+      "placement": "Static",
+      "lut": 5129,
+      "ff": 1078,
+      "ramb36": 44,
+      "ramb18": 0,
+      "dsp": 0,
+      "observed_min_us": 477.6380095527602,
+      "observed_max_us": 2149.322042986441
+    },
+    "axi_dma": {
+      "placement": "Static",
+      "lut": 1349,
+      "ff": 1976,
+      "ramb36": 4,
+      "ramb18": 2,
+      "dsp": 0
+    },
+    "axi_control_interconnect": {
+      "placement": "Static",
+      "lut": 522,
+      "ff": 675,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0
+    },
+    "clock_reset": {
+      "placement": "Static",
+      "lut": 17,
+      "ff": 33,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0
+    },
+    "helical": {
+      "placement": "Static",
+      "domain": "PS",
+      "lut": 0,
+      "ff": 0,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0,
+      "observed_min_us": 9022.595090225952,
+      "observed_max_us": 27213.439272134394
+    },
+    "derandomizer": {
+      "placement": "Static",
+      "domain": "PS",
+      "lut": 0,
+      "ff": 0,
+      "ramb36": 0,
+      "ramb18": 0,
+      "dsp": 0,
+      "observed_min_us": 278.16300278163004,
+      "observed_max_us": 1245.0610124506102
+    }
+  },
+  "decision": "All decoder stages are needed by every frame and use a streaming pipeline. No alternate time-multiplexed workload or measured per-stage partial images demonstrate an area/latency benefit. High resource use alone does not qualify a stage as an RM.",
+  "resource_clock_hz": 50000000,
+  "latency_clock_hz": 71428570,
+  "observed_whole_slot_pcap_us": [
+    18088.770180887703,
+    18089.799180897993
+  ],
+  "observed_whole_slot_service_us": [
+    3623470.5512347054,
+    3623474.4812347447
+  ],
+  "sources": {
+    "DCS_FPGA\\DPR\\FULL_PL\\hw\\vivado\\build\\dfx\\hybrid_hierarchy.rpt": "2d67b16d5aeb4e88490456c7499611b9052c61bc50c8025947180b6f22ed154b",
+    "hardware_live\\captures\\api_verification_final.json": "33a8417ca2ac83eb537fdbf158995dd23bcd1b89a06ba3140b4a8efffe466385",
+    "hardware_live\\captures\\dpr_final_evidence.json": "a5ff1ee2b66c5036e7e2fc7aadd654d1848d74e1405dd6d30c36312b3a584fad"
+  }
+}

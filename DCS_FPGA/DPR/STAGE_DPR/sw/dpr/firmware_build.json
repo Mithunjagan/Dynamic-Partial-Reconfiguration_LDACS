@@ -1,0 +1,69 @@
+{
+  "architecture": 0,
+  "elf_layout": {
+    "entry": 16778356,
+    "load_regions": [
+      [
+        16777216,
+        16787800,
+        5
+      ],
+      [
+        16787800,
+        16857872,
+        6
+      ]
+    ]
+  },
+  "platform": "stage_dpr",
+  "required_static_monitor_version": 1,
+  "compiler": "arm-xilinx-eabi-gcc.exe (GCC) 11.2.0",
+  "flags": [
+    "-std=c11",
+    "-mcpu=cortex-a9",
+    "-mfpu=vfpv3",
+    "-mfloat-abi=hard",
+    "-marm",
+    "-mno-unaligned-access",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wno-unused-function",
+    "-Wno-unused-variable",
+    "-Wno-unused-parameter",
+    "-Iinclude",
+    "-nostdlib",
+    "-nostartfiles",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-stack-protector",
+    "-DARCH=0",
+    "-DDPR_STATIC_MONITOR=1",
+    "-Wl,--build-id=none",
+    "-T",
+    "ldacs_bridge.ld",
+    "-Wl,-Map,dpr/uart_bridge.map",
+    "-o",
+    "dpr/uart_bridge.elf",
+    "src/uart_bridge.c",
+    "src/runtime.c",
+    "src/helical.c",
+    "src/derand.c",
+    "-lgcc",
+    "-e",
+    "_start"
+  ],
+  "cache_policy": "I-cache and D-cache disabled for all variants",
+  "elf_sha256": "87b46a41117b49fb4ef5bff0fb95787cc001c65752bfab1a772d9ffeef5bfa09",
+  "sources": {
+    "sw\\include\\ldacs.h": "df36dbca520cad573fa55674334938b36ee77642f911340c3a110bb1cb37d216",
+    "sw\\ldacs_bridge.ld": "46f129436a605632abd65defd46aa8ea745e963ddb5ee9b058e334c65ec00b9e",
+    "sw\\src\\crc32.inc": "6d7aec6e6edac3424d4ab24a3fe49a64e716f404108b878ef4a3a014f4766cd4",
+    "sw\\src\\derand.c": "3fd19000380c5e312b6436c4009aca7c3f6f630af65e41d1d20b2ed06e463222",
+    "sw\\src\\dpr_runtime.inc": "27a231ab33bcfaf9b1b8fa0abba31f51016ae83e674cc2098d68f2a5ce32768e",
+    "sw\\src\\helical.c": "5b5584cd18b8ad5a2c16e40288bb14cbd6cb6f0be4ce3bf4be8cfb4b4b685af7",
+    "sw\\src\\runtime.c": "af98ee7a532d467305656ec38a81cd41ab7e4d115fb9902ecaf62bc924393559",
+    "sw\\src\\stage_runtime.inc": "8b59c83bfe9b0e91724bd0a4f86ef4345eed394a4e3910cdc7b30d1f58367936",
+    "sw\\src\\uart_bridge.c": "e235a6efa0674c3eb71bfbb2cf9fc383f46ef17460c424a6b76565c2a728dab2"
+  }
+}

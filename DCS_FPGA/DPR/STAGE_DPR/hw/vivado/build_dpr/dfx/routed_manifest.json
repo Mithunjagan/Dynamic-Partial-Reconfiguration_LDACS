@@ -1,0 +1,1 @@
+ {"schema":"ldacs_dfx_routed_v1","part":"xc7z010clg400-1","build_token":411869786,"rp_cell":"system_i/dec/inst/dynamic_slot.rp","pr_verify_passed":true,"critical_warnings_passed":true,"static_monitor_version":1,"hardware_source_sha256":"a0267723139488e6dfc78feffbfdb3a22227915cc0fcbc7d9861aa7efb034ba1","configurations":["viterbi","rs"]} 
