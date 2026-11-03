@@ -335,9 +335,18 @@ class Workbench:
             if match: self.update(stage=int(match[1]), status=match[2])
             if line == 'AXIOM_LOAD_OK': loaded = True
         if not loaded: raise RuntimeError('JTAG loader did not confirm firmware start')
+        # XSDB con returns before C startup has cleared BSS and reset UART.
+        # A probe sent during that reset can be discarded. This pause is outside
+        # every decoder measurement and never supplies a measurement fallback.
+        time.sleep(1)
         # Starting the CPU is not sufficient evidence: verify the binary UART architecture ID and payload.
         self.update(mode=mode, status='Verifying board-returned architecture ID and known message')
-        probe = self.transact(mode, 'qpsk_1_2', 'AXIOM BOARD LINK VERIFIED', trace=False)
+        try:
+            probe = self.transact(mode, 'qpsk_1_2', 'AXIOM BOARD LINK VERIFIED', trace=False)
+        except TimeoutError as error:
+            if str(error) != 'Board short read: 0/4 bytes': raise
+            self.log('No initial UART reply after startup; retrying only the known boot probe once', 'UART', 'warn')
+            probe = self.transact(mode, 'qpsk_1_2', 'AXIOM BOARD LINK VERIFIED', trace=False)
         if not probe['valid']: raise RuntimeError('Board boot probe returned a payload/CRC failure')
         bit = design_root(mode) / 'hw/vivado/build/ldacs_zed/ldacs_zed.runs/impl_1/system_wrapper.bit'
         evidence = {'mode': mode, 'verified_utc': now(), 'firmware_sha256': sha(elf), 'bitstream_sha256': sha(bit),
@@ -487,6 +496,7 @@ class Workbench:
             self.log(line, 'JTAG')
             if line == 'AXIOM_DPR_LOAD_OK': loaded = True
         if not loaded: raise RuntimeError('DPR firmware start not confirmed')
+        time.sleep(1)  # Allow C startup/UART reset before the first identity request.
         board = dpr.DPRBoard(self.port, timeout=600)
         self.board = board
         try:

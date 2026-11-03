@@ -385,14 +385,14 @@
     "hardware_live/measure_uart_bursts.py": "b10ebcb97e3b95e18c05bfe86ae78d8a13f1ecd1173b9493f62d8679b52ff74a",
     "hardware_live/modem.inc": "9424b438097803843c5304b01e46153e5c0ca7faeb2c7d63e0a68dadc5fdf675",
     "hardware_live/README.md": "5b468f55f5b24f9cd93b89220b3cb83844920ab1b1d4802dfa3466a8b15ec80b",
-    "hardware_live/server.py": "5fea0cf04a24bab97e658b7b171b532bc8bd8daf9a6683eba49bcf6b36edb3c6",
+    "hardware_live/server.py": "6f0fec8ff57128d2cbeec17656f1a440bc4e1acf3d41675fd7a33939b89a32f1",
     "hardware_live/VALIDATION.md": "d9eaa91ff0a7c90eee9c9f6a2b61e665751dab0adea4d43825a77609408f4ca1",
     "hardware_live/verify.py": "69e3704e36d564fe7e88ee55702c0ff2a59ded6c8e1361aef194157df035194e",
     "board_details/edgeZ7_10/A.0/board.xml": "88c0af68f0da06d741d0187e2188bccab976c87814dfeec151b982ff6fd745c6",
     "board_details/edgeZ7_10/A.0/EDGE-ZYNQ.jpg": "5f9b68d69f2f302fe7cf35197d23e95a2b23968e34d4b8b731e96fb705f2f539",
     "board_details/edgeZ7_10/A.0/part0_pins.xml": "f61e8fa4fc215540d8a60de9321f7e44f96de971ef9b4bf08ddda137735872ca",
     "board_details/edgeZ7_10/A.0/preset.xml": "09a0ed058c77b234fe5d3b8d788592886b19f1515fb161991796239a6d6113ac",
-    "index.html": "5c9fe4d69b3cd951596b755a4499de91a60ee27646334fafdd8ae09fd1741cd1",
+    "index.html": "6967e394f77e4dae060fc6aebb3fa5fa9a730b50c67ec22e7259e78564cee594",
     "benchmarks/selected_designs_20261103/collect_existing.py": "57ad9e4eedbb5a383f50566bef3635ea328f9a2f40d2a60d6e6ff7aa70114a05",
     "benchmarks/selected_designs_20261103/decoder.csv": "d70da2af6a622adc76c1bbac8ad1afdc067374658e01541f4fa16b99e83cd955",
     "benchmarks/selected_designs_20261103/decoder_stages.csv": "fc1cdb2cc7f6af7c8d828ff45e39fa6d6acf73951ae2f2db69b0d10e1925a348",
@@ -445,7 +445,16 @@
     "DCS_FPGA/DPR/STAGE_DPR/hw/vivado/build_dpr/dfx/rs_utilization.rpt": "a0c237774b096ff8a78414c6d363748981375ffd1f3c5b22948410c3803c3fe1",
     "DCS_FPGA/DPR/STAGE_DPR/hw/vivado/build_dpr/dfx/viterbi_timing.rpt": "7820d0c07656f0f98072e0dbc8565480102887e86f6aa7f3565da3260fd84129",
     "DCS_FPGA/DPR/STAGE_DPR/hw/vivado/build_dpr/dfx/rs_timing.rpt": "850d3564a7443ea204bafc2d2c37878a42015a7ab943d04f533ce59f639ca5b4",
-    "DCS_FPGA/DPR/STAGE_DPR/hw/vivado/build_dpr/ldacs_zed/ldacs_zed.gen/sources_1/bd/system/ip/system_ps7_0/ps7_init.tcl": "ee440184e470016597361fb90900b951d4f1cd6423aed75df34273e551506eb7"
+    "DCS_FPGA/DPR/STAGE_DPR/hw/vivado/build_dpr/ldacs_zed/ldacs_zed.gen/sources_1/bd/system/ip/system_ps7_0/ps7_init.tcl": "ee440184e470016597361fb90900b951d4f1cd6423aed75df34273e551506eb7",
+    "hardware_live/analytics_server.py": "e66d646ef928e4498ddc778fb556720aff8942df55f6f4ad578cb57641dfbe5f",
+    "hardware_live/analytics.html": "be08d49559c66cd7f59bd65344ee3df781e7259779f458063a8c257e6282afd6",
+    "hardware_live/ANALYTICS.md": "8d89a2bcb11baaa379347ee4788e89db50a117293746013a75f53ac2be23cb06",
+    "hardware_live/verify_analytics.py": "df4947a05cbc587933fa70c85844c274557fc926c2c6ffbbf18658b86cc43ae9",
+    "hardware_live/audit_analytics.py": "2861ccb4e880f94f25c02e35bf441d5405752c24865c616ba291197578cd36c0",
+    "benchmarks/live_analytics/20261103T074936_573297Z/evidence.json": "0cbe5d7366445c15712708cef622e3574011d9801a94163bcb4a9c8d006ba5aa",
+    "benchmarks/live_analytics/20261103T074936_573297Z/measurement_audit.json": "8ebfa0faf5ede78e7a5dd9c9ef93354140fe2a23ae9d12c2d05c110b3d7b8a38",
+    "benchmarks/live_analytics/20261103T074936_573297Z/browser_verification.json": "7f883dafe2977b28f7cbfccd82977a7f0c00745ff41869aee78f6b4e3ede4dc9",
+    "README.md": "d88c5971f17f52267c9def4660511f73eb36d36cac78bad369721238f7f2fc0d"
   },
-  "scope": "Source and existing physical evidence; four selected benchmark designs; no additional hardware runs"
+  "scope": "Selected receiver designs and preserved physical evidence, plus fresh-only live analytics and the separately dated 20261103T074936_573297Z physical campaign. Measurements retain original acquisition times."
 }

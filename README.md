@@ -3,6 +3,28 @@
 Source, programming images, and physical-board benchmark evidence for an
 AllAboutFPGA EDGE Z7-10 / XC7Z010CLG400-1, using Vivado/Vitis 2022.2.
 
+## Live message console and benchmark analytics
+
+The redesigned message send/receive console and the benchmark dashboard are separate local pages with navigation between them. With the physical board and installed Xilinx tools available, run these in separate terminals:
+
+```powershell
+python hardware_live/server.py
+python hardware_live/analytics_server.py
+```
+
+- Message send/receive console: `http://127.0.0.1:8765/`
+- Benchmark dashboard: `http://127.0.0.1:8767/`
+
+Use the dashboard to start a fresh comparison. Its live mode can repeat all eight coding profiles across PS, PL, Hybrid and full-PL DPR sequentially. Stop the campaign after its active operation before using the board for interactive messages. No historical values fill missing live measurements.
+
+[Analytics instructions](hardware_live/ANALYTICS.md) explain timing boundaries, exports and additional unmeasured candidates. The GitHub evidence below is a saved record, not a live board feed:
+
+- [Fresh physical campaign](benchmarks/live_analytics/20261103T074936_573297Z/evidence.json)
+- [Independent raw-counter and payload audit](benchmarks/live_analytics/20261103T074936_573297Z/measurement_audit.json)
+- [Browser verification](benchmarks/live_analytics/20261103T074936_573297Z/browser_verification.json)
+
+The complete campaign covers 32 architecture/profile entries. Startup failures and their resolution times remain in the evidence. Stored implementation reports, simulated timing, RF performance and estimated power are excluded from this live dataset. The earlier benchmark sections below retain their original, separate provenance.
+
 ## Selected benchmark designs
 
 | Design | Decoder placement | Existing physical benchmark |

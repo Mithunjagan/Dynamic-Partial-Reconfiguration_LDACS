@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "physical_bridge_visible": true,
+    "all_profiles": true,
+    "all_architectures": true,
+    "no_page_overflow_desktop": true,
+    "chart_marks_visible": true,
+    "stage_table_populated": true,
+    "quality_populated": true,
+    "matrix_filter_keeps_entries": true,
+    "csv_download": true,
+    "evidence_download": true,
+    "no_page_overflow_mobile": true,
+    "print_controls_hidden": true,
+    "no_browser_errors": true
+  },
+  "errors": []
+}
